@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "name": "phones",
+        "quantity": 12,
+        "price": 40000,
+        "category": "electronic"
+    },
+    {
+        "id": "2",
+        "name": "bat",
+        "quantity": 5,
+        "price": 1500,
+        "category": "wood"
+    },
+    {
+        "id": "3",
+        "name": "chair",
+        "quantity": 2,
+        "price": 200,
+        "category": "wood"
+    },
+    {
+        "id": "4",
+        "name": "laptop",
+        "quantity": 12,
+        "price": 70000,
+        "category": "electronic"
+    },
+    {
+        "id": "5",
+        "name": "smart_watch",
+        "quantity": 15,
+        "price": 3000,
+        "category": "electronic"
+    },
+    {
+        "id": "6",
+        "name": "register",
+        "quantity": 33,
+        "price": 600,
+        "category": "paper"
+    },
+    {
+        "id": "7",
+        "name": "fans",
+        "quantity": 20,
+        "price": 7000,
+        "category": "electronic and steel"
+    },
+    {
+        "id": "8",
+        "name": "toys",
+        "quantity": 25,
+        "price": 300,
+        "category": "plastic"
+    }
+]
