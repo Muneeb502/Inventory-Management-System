@@ -1,6 +1,6 @@
 #importing pandas as pd 
 
-import pandas as pd
+import pandas as pd ,json
 
 
 #creating a simple  data set of items
@@ -14,13 +14,13 @@ iteams = [
     {"id": "5", "name": "smart_watch" ,"quantity": 15 , "price": 3000 , "category": "electronic"},
     {"id": "6", "name": "register" ,"quantity": 33 , "price": 600 , "category": "paper"},
     {"id": "7", "name": "fans" ,"quantity": 20 , "price": 7000 , "category": "electronic and steel"},
-    {"id": "8", "name": "shoes" ,"quantity": 25 , "price": 3000 , "category": "lather"}
+    {"id": "8", "name": "toys" ,"quantity": 25 , "price": 300 , "category": "plastic"}
 
 ]
 
 
 
-df = pd.DataFrame(iteams)
+#df = pd.DataFrame(iteams)
 
 # Explore the data and  different columns  -----  using pandas
   #print(df[["name", "price"]])
@@ -95,7 +95,23 @@ def serch_data():
                     print(i)
     except :
         print("invaild id _____try again")            
+#-------------------file handling -#def savd_data(inventory.txt): -------------
 
+def save_iteams_to_json(iteams, filename):
+    """
+    Save the iteams to a JSON file.
+
+    :param iteams: List of dictionaries representing the iteams.
+    :param filename: Name of the file to save the iteams.
+    """
+    with open(filename, 'w') as file:
+        json.dump(iteams, file, indent=4)
+
+#----------------------------loadibg iteams from jason-----------------
+
+def load_iteams_from_jason(filename):
+    with open(filename, 'r') as file:
+        return json.load(file)
     
 #----------------------------ASKING USER WHAT HE WABT TO DO -----------------
 def menu():
@@ -105,10 +121,14 @@ def menu():
       press 3. for updating items
       press 4. for searching items 
       press 5. for showing data
-      press 6. for Exit    
+      press 6. for sava iteams in jason
+      press 7.  from  loading data from jason
+      press 8. for Exit    
       """)
     
 #--------------using while because we dont know how many times user want to do this task .....when user enter 5 so i will be exist fro the program------------
+
+
 while True:
     menu()
     user_input  = int(input("ENTER THE NUMBER HERE : "))
@@ -124,9 +144,13 @@ while True:
     elif user_input == 5:
         print(pd.DataFrame(iteams))
     elif user_input == 6:
+         save_iteams_to_json(iteams, 'iteams.json')
+    elif user_input == 7:
+        loaded_inventray = load_iteams_from_jason("iteams.json")
+        print(loaded_inventray) 
+
+    elif user_input == 8:
         break
     else:
         print("Invalid Number")
         
-       
-
