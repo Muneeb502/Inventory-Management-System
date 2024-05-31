@@ -1,5 +1,5 @@
 
-# Inventory-Management-System
+<h1 style="color: #238636;" >Inventory-Management-System</h1> 
 
 
 Python-based application that allows users to manage an inventory of 
@@ -8,7 +8,7 @@ track of its stock and ensure efficient management of resources.
 # DETAILS
 
 
-<h2>Data Collection</h2>
+<h2 style="color:#4493f8;" >Data Collection</h2>
 Creating a simple data collection with the help of lists and dictionaries, which includes some default data.
 
 ## Functionality
