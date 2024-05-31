@@ -54,5 +54,12 @@
         "quantity": 25,
         "price": 300,
         "category": "plastic"
+    },
+    {
+        "id": "12",
+        "name": "smartcell phone",
+        "quantity": 4,
+        "price": 60000,
+        "category": "electronic"
     }
 ]
