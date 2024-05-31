@@ -1,5 +1,5 @@
 
-<h1 style="color: #238636;" >Inventory-Management-System</h1> 
+<h1>Inventory-Management-System</h1> 
 
 
 Python-based application that allows users to manage an inventory of 
@@ -8,21 +8,28 @@ track of its stock and ensure efficient management of resources.
 # DETAILS
 
 
-<h2 style="color:#4493f8;" >Data Collection</h2>
+<h2>Data Collection</h2>
 Creating a simple data collection with the help of lists and dictionaries, which includes some default data.
 
 ## Functionality
 
+<ul>Creating different functions like:
+<li><p> Addition: allows users to add new items to the inventory</p>
+</li>
+<li><p>Updating: enables users to update the quantity of existingitems</p>
+</li>
+<li><p> Removing: allows users to remove items from the inventory</p>
+</li>
+<li><p> Showing Data: displays the current inventory data</p>
+</li>
+<li><p> Data Persistence</p>
+</li>
+<li><p>The system uses JSON files to save and load the inventory data, ensuring that the data is preserved between sessions.</p>
+</li>
 
-Creating different functions like:
-<p> Addition: allows users to add new items to the inventory</p>
-<p>Updating: enables users to update the quantity of existingitems</p>
+</ul>
 
-<p> Removing: allows users to remove items from the inventory</p>
-<p> Showing Data: displays the current inventory data</p>
 
-<p> Data Persistence</p>
-<p>The system uses JSON files to save and load the inventory data, ensuring that the data is preserved between sessions.</p>
 
 ## FEATURES
 
@@ -33,11 +40,16 @@ Creating different functions like:
 <p>Data persistence using JSON files</p> 
 
 ## HOW TO USE
-
-1.Run the main.py file to start the application
-2.Follow the menu options to add, update, remove, or show data
-3.Use the save_data function to save the data to a JSON file
-4.Use the load_data function to load the data from a JSON file
+<ol>
+    <li>Run the main.py file to start the application
+    </li>
+    <li>Follow the menu options to add, update, remove, or show data
+    </li>
+    <li>Use the save_data function to save the data to a JSON file
+    </li>
+    <li>Use the load_data function to load the data from a JSON file
+    </li>
+</ol>
 
 
 # CONTRIBUTING
