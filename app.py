@@ -21,7 +21,7 @@ df = pd.DataFrame(iteams)    #making data frame of this list of iteam  with the 
 print(df[["name", "price"]])
 
 
-# creating the function for adding iteam in iteams ------------------with try and except ------data handling
+# creating the function for adding iteam in iteams -------------------with try and except ------data handling
 
 
 def added_data():
